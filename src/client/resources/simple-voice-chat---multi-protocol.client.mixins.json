@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "net.sallylabs.voicechat.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "plugin": "net.sallylabs.voicechat.mixin.CompatibilityMixinPlugin",
+  "client": [
+    "ClientManagerMixin",
+    "SecretPacketMixin",
+    "legacy.LegacySecretPacketMixin",
+    "legacy.LegacyAesMixin",
+    "legacy.LegacyAuthenticateMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

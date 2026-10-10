@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "simple-voice-chat---multi-protocol",
+  "version": "${version}",
+  "name": "ViaVoice",
+  "description": "ViaVoice: Client compatibility adapters for Simple Voice Chat protocols 18, 19 and 20.",
+  "icon": "super_icon.png",
+  "authors": [
+    "SallyLabs"
+  ],
+  "license": "LicenseRef-ViaVoice-Source-1.0",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.sallylabs.voicechat.VoiceChatMultiProtocol"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "simple-voice-chat---multi-protocol.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": ">=1.20",
+    "java": ">=17",
+    "fabric-api": "*",
+    "voicechat": "*"
+  }
+}
